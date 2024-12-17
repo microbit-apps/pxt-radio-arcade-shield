@@ -1,5 +1,6 @@
 {
     "name": "arcadeshield",
+    "version": "0.1.13",
     "description": "Support for the Arcade Shield. micro:bit (V2) only.",
     "dependencies": {
         "core": "*",
