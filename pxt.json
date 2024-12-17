@@ -1,50 +1,45 @@
 {
-  "name": "pxt-radio-arcade-shield",
-  "version": "0.0.1",
-  "description": "Control an Arcade Shield over the radio.",
-  "dependencies": {
-    "core": "*",
-    "radio": "*",
-    "microphone": "*",
-    "arcadeshield": "*",
-    "fonts": "*"
-  },
-  "files": [
-    "README.md",
-    "radioScreenRx.ts",
-    "radioScreenTx.ts",
-  ],
-  "public": true,
-  "targetVersions": {
-    "target": "7.1.2",
-    "targetId": "microbit"
-  },
-  "supportedTargets": [
-    "microbit"
-  ],
-  "preferredEditor": "tsprj",
-  "tests": [
-    "test.ts"
-  ],
-  "palette": [
-    "#000000",
-    "#ffffff",
-    "#ff2121",
-    "#ff93c4",
-    "#ff8135",
-    "#fff609",
-    "#249ca3",
-    "#78dc52",
-    "#003fad",
-    "#87f2ff",
-    "#8e2ec4",
-    "#a4839f",
-    "#5c406c",
-    "#e5cdc4",
-    "#91463d",
-    "#000000"
-  ],
-  "disablesVariants": [
-    "mbdal"
-  ]
+    "name": "arcadeshield",
+    "description": "Support for the Arcade Shield. micro:bit (V2) only.",
+    "dependencies": {
+        "core": "*",
+        "bitmap": "*",
+        "fonts": "*"
+    },
+    "files": [
+        "config_nrf.h",
+        "arcadegamepad.h",
+        "indexedscreen.h",
+        "arcadesound.h",
+        "jdprotocol.h",
+        "jddisplay.h",
+        "jddisplay.cpp",
+        "pins.cpp",
+        "pinsDigital.cpp",
+        "controllerbuttons.cpp",
+        "screen.cpp",
+        "screenhelpers.d.ts",
+        "shims.d.ts",
+        "radioScreenRx.ts",
+        "radioScreenTx.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "7.1.17",
+        "pxt": "11.3.6"
+    },
+    "preferredEditor": "tsprj",
+    "test": [
+        "test.ts"
+    ],
+    "hidden": true,
+    "disablesVariants": [
+        "mbdal"
+    ],
+    "yotta": {
+        "config": {
+            "DEVICE_BLE": 0,
+            "DMESG_SERIAL_DEBUG": 1
+        }
+    }
 }
