@@ -1,11 +1,10 @@
 {
     "name": "arcadeshield",
-    "version": "0.1.13",
     "description": "Support for the Arcade Shield. micro:bit (V2) only.",
     "dependencies": {
-        "core": "*",
-        "bitmap": "*",
-        "fonts": "*"
+        "core": "file:../core",
+        "bitmap": "file:../bitmap",
+        "fonts": "file:../fonts"
     },
     "files": [
         "config_nrf.h",
@@ -20,20 +19,14 @@
         "controllerbuttons.cpp",
         "screen.cpp",
         "screenhelpers.d.ts",
-        "shims.d.ts",
-        "radioScreenRx.ts",
-        "radioScreenTx.ts"
+        "shims.d.ts"
     ],
-    "public": true,
-    "targetVersions": {
-        "target": "7.1.17",
-        "pxt": "11.3.6"
-    },
-    "preferredEditor": "tsprj",
     "test": [
         "test.ts"
     ],
+    "public": true,
     "hidden": true,
+    "preferredEditor": "tsprj",
     "disablesVariants": [
         "mbdal"
     ],
